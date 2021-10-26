@@ -1,0 +1,42 @@
+.title {
+    height: 70px;
+}
+
+h1 {
+    line-height: 100px;
+    vertical-align: bottom;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #29b1dd;
+}
+
+.card {
+    border-radius: 1rem!important;
+}
+
+.container-fluid {
+    background-color: #dddddd;
+}
+
+.form-select {
+    width: auto!important;
+}
+
+p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.animal {
+    color: blue;
+}
+
+.vegetable {
+    color: #ffa500;
+}
+
+.user {
+    color: purple;
+}
