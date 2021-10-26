@@ -1,5 +1,6 @@
 .title {
     height: 70px;
+    padding-left: 12px;
 }
 
 h1 {
@@ -26,16 +27,5 @@ h1 {
 
 p {
     text-transform: uppercase;
-}
-
-.blue {
-    color: blue;
-}
-
-.yellow {
-    color: yellow;
-}
-
-.purple {
-    color: purple;
+    font-weight: bold;
 }
