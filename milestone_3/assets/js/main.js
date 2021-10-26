@@ -1,7 +1,3 @@
-
-
-
-
 const icons =
     [
         {
@@ -103,13 +99,50 @@ const icons =
     ];
 
 
-
-icons.forEach(icon => {
+/* icons.forEach((icon => {
     const card = cardMaker(icon)
     document.querySelector('.row-cols-5').insertAdjacentHTML('beforeend', card)
-});
+
+    const select = document.getElementById('filter');
+
+    select.addEventListener('change', function () {
+
+        console.log(this.value);
+        if (this.value == 'animals') {
+
+        }
+    })
+}
+)
+); */
+
+const row = document.querySelector('.row-cols-5')
+
+const select = document.getElementById('filter');
+
+select.addEventListener('change', grid)
+
+//imposto il render a schermo di "all" di default
+icons.forEach(icon => {
+    row.innerHTML += cardMaker(icon)
+})
 
 
+//funzione per generare elementi al select
+function grid() {
+
+    row.innerHTML = '';
+
+    icons.forEach(icon => {
+
+        if (select.value == icon.type || select.value == 'all') {
+            row.innerHTML += cardMaker(icon)
+        }
+    })
+}
+
+
+//funzione per creare carte
 function cardMaker(icon) {
     return `
     <div class="col">
@@ -122,10 +155,3 @@ function cardMaker(icon) {
     </div>    
     `
 }
-
-
-
-
-
-
-
