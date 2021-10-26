@@ -1,0 +1,20 @@
+.title {
+    height: 70px;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #29b1dd;
+}
+
+.card {
+    width: calc(100 / 5)!important;
+}
+
+.container-fluid {
+    background-color: #dddddd;
+}
+
+.form-select {
+    width: auto!important;
+}

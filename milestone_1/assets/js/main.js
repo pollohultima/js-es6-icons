@@ -101,3 +101,22 @@ const icons =
             family: 'fas'
         }
     ];
+
+
+
+icons.forEach(icon => {
+
+    const card =
+        `
+        <div class="col">
+    <div class="card">
+        <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
+        <div class="icon_name">
+            <p>${icon.name}</p>
+        </div>
+    </div>
+    </div>    
+    `
+    document.querySelector('.row-cols-5').insertAdjacentHTML('beforeend', card)
+});
+
