@@ -105,18 +105,26 @@ const icons =
 
 
 icons.forEach(icon => {
-
-    const card =
-        `
-        <div class="col">
-    <div class="card">
-        <i class="${icon.family} ${icon.prefix}${icon.name}"></i>
-        <div class="icon_name">
-            <p>${icon.name}</p>
-        </div>
-    </div>
-    </div>    
-    `
+    const card = cardMaker(icon)
     document.querySelector('.row-cols-5').insertAdjacentHTML('beforeend', card)
 });
+
+
+function cardMaker(icon) {
+    return `
+    <div class="col">
+        <div class="card align-items-center pt-4 rounded">
+            <i class="${icon.family} ${icon.prefix}${icon.name} fs-1"></i>
+            <div class="icon_name py-2">
+                <p>${icon.name}</p>
+            </div>
+        </div>
+    </div>    
+    `
+}
+
+
+
+
+
 

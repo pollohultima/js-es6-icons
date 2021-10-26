@@ -2,13 +2,18 @@
     height: 70px;
 }
 
+h1 {
+    line-height: 100px;
+    vertical-align: bottom;
+}
+
 .navbar {
     height: 70px;
     background-color: #29b1dd;
 }
 
 .card {
-    width: calc(100 / 5)!important;
+    border-radius: 1rem!important;
 }
 
 .container-fluid {
@@ -17,4 +22,20 @@
 
 .form-select {
     width: auto!important;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+.blue {
+    color: blue;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.purple {
+    color: purple;
 }
